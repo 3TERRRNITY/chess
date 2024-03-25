@@ -1,4 +1,3 @@
-import logo from "../../assets/black-bishop.png";
 import { Cell } from "../Cell";
 import { Colors } from "../Colors";
 
@@ -11,9 +10,10 @@ export enum FigureNames {
   ROOK = "Ладья",
   BISHOP = "Слон",
 }
+
 export class Figure {
   color: Colors;
-  logo: typeof logo | null;
+  logo: string | null;
   cell: Cell;
   name: FigureNames;
   id: number;
